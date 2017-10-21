@@ -38,7 +38,7 @@ export class HomePage {
     this.deputados.push(this.deputado2)
   }
 
-  detalhes(){
+  detalhes(deputado:Deputado){
     this.navCtrl.push(DetalhesDeputadoPage)
   }
 }
