@@ -8,13 +8,14 @@
 </ion-header>
 
 <ion-content no-padding>
-  <ion-card>
+  <ion-card *ngFor="let deputado of deputados" (click)="detalhes()">
     <ion-item>
       <ion-avatar item-start>
         <img src="img/marty-avatar.png">
       </ion-avatar>
-      <h2>Marty McFly</h2>
-      <p>November 5, 1955</p>
+      <h2>{{deputado.nome}}</h2>
+      <p>{{deputado.partido}}</p>
+      <p>Despesas - R$ {{deputado.despesas}}</p>
     </ion-item>
   </ion-card>
 </ion-content>
