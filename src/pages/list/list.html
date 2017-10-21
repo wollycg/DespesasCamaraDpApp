@@ -8,16 +8,16 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-card *ngFor="let partido of partidos" (click)="detalhes(partido)">
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="img/marty-avatar.png">
+      </ion-avatar>
+      <h2>{{partido.partido}}</h2>
+      <p>Despesas - R$ {{partido.despesas}}</p>
+    </ion-item>
+  </ion-card>
 </ion-content>
+
+
