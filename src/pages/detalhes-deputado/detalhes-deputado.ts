@@ -1,3 +1,4 @@
+import { Deputado } from './../home/home';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -14,8 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'detalhes-deputado.html',
 })
 export class DetalhesDeputadoPage {
-
+  deputado: Deputado
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.deputado = this.navParams.get('deputado')
+    console.log(this.deputado)
   }
 
   ionViewDidLoad() {
