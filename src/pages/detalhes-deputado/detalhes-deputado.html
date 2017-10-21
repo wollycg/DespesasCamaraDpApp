@@ -13,20 +13,23 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
   <ion-grid>
-    <ion-row>
+    <ion-row class="header">
       <ion-col col-4><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Tiririca_na_camara.jpg" alt="tiririca"></ion-col>
       <ion-col col-6>
-        <ion-row class="detalhes"><h4>{{deputado.nome}}</h4></ion-row>
+        <ion-row class="detalhes"><p>{{deputado.nome}}</p></ion-row>
         <ion-row class="detalhes1"><p>{{deputado.partido}}</p></ion-row>
         <ion-row class="detalhes1"><p>{{deputado.uf}}</p></ion-row>
       </ion-col>
     </ion-row>
-    <h4>Despesas - R$ 427,42</h4>
-    <ion-list>
+
+    <ion-card class="cardDetalhes">
+      <p>Despesas - R$ 427,42</p>
+      <ion-list>
         <ion-item>Combustivel - R$ 425,00</ion-item>
         <ion-item>Telefonia - R$ 2,42</ion-item>
       </ion-list>
+    </ion-card>
   </ion-grid>
 </ion-content>

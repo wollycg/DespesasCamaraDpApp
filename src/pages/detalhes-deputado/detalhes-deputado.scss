@@ -1,12 +1,26 @@
+.grid{
+  padding: 0;
+}
+.cardDetalhes p{
+  font-size: 131%;
+  padding-left: 2%
+}
+.header{
+  background-color: #8BC34A;
+  color: white;
+}
+
 img{
   height: 150px;
   border-radius: 8px;
 }
 .detalhes{
-  margin-top: 80px;
-  height: 20px;
+  margin-top: 50px;
+  height: 40px;
+  font-size: 25px;
 }
 .detalhes1{
-  height: 20px;
+  height: 19px;
+  font-size: 17px;
 }
 
