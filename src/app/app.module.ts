@@ -5,8 +5,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { DetalhesDeputadoPage } from '../pages/detalhes-deputado/detalhes-deputado'
-
+import { DetalhesDeputadoPage } from '../pages/detalhes-deputado/detalhes-deputado';
+import { DetalhesPartidosPage} from '../pages/detalhes-partidos/detalhes-partidos';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Provider } from '../providers/provider/provider';
@@ -16,7 +16,8 @@ import { Provider } from '../providers/provider/provider';
     MyApp,
     HomePage,
     ListPage,
-    DetalhesDeputadoPage
+    DetalhesDeputadoPage,
+    DetalhesPartidosPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,8 @@ import { Provider } from '../providers/provider/provider';
     MyApp,
     HomePage,
     ListPage,
-    DetalhesDeputadoPage
+    DetalhesDeputadoPage,
+    DetalhesPartidosPage
   ],
   providers: [
     StatusBar,
